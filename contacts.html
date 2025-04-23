@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | FML’s Ready-Mix Dishwashing Soap</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo-container">
+        <img src="logo.png" alt="FML Logo" class="logo-image" />
+        <h1 class="logo-text">FML</h1>
+      </div>
+      <div class="menu-toggle">&#9776;</div>    
+      <nav class="nav-links">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="ingredients.html">INGREDIENTS</a></li>
+          <li><a href="products.html">PRODUCTS</a></li>
+          <li><a href="contacts.html" class="active">CONTACTS</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Whether you have a question about our product, need assistance, or just want to say hello — feel free to get in touch.</p>
+
+      <div class="contact-details">
+        <p><strong>Email:</strong> <a href="https://loria.francisbscs2024@gmail.com" target="_blank">loria.francisbscs2024@gmail.com</a></p>
+        <p><strong>Phone:</strong> +63 962 521 1520</p>
+        <p><strong>Facebook:</strong> <a href="https://www.facebook.com/sicnarf.airol" target="_blank">Francis M. Loria</a></p>
+      </div>
+
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer-fullwidth">
+    <div class="footer-inner">
+      <h2>FML’s Ready-Mix Dishwashing Soap</h2>
+      <p>Providing safe, powerful, and eco-friendly dishwashing solutions for every home.</p>
+
+      <div class="footer-contact-info">
+        <p><strong>Email:</strong> <a href="https://loria.francisbscs2024@gmail.com" target="_blank">loria.francisbscs2024@gmail.com</a></p>
+        <p><strong>Phone:</strong> +63 962 521 1520</p>
+        <p><strong>Facebook:</strong> <a href="https://www.facebook.com/sicnarf.airol" target="_blank">Francis M. Loria</a></p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 FML. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links ul");
+  
+      toggle.addEventListener("click", function () {
+        navLinks.classList.toggle("show");
+      });
+    });
+  </script>
+  
+</body>
+</html>

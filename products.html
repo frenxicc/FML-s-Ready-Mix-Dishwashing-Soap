@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FML Products</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo-container">
+        <img src="logo.png" alt="FML Logo" class="logo-image" />
+        <h1 class="logo-text">FML</h1>
+      </div>
+      <div class="menu-toggle">&#9776;</div>     
+      <nav class="nav-links">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="ingredients.html">INGREDIENTS</a></li>
+          <li><a href="products.html" class="active">PRODUCTS</a></li>
+          <li><a href="contacts.html">CONTACTS</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="product-gallery">
+    <h2>Our Products</h2>
+    <div class="products-container">
+
+      <div class="product-card">
+        <img src="classic lemon scent.png" alt="Classic Lemon Scent" />
+        <h3>Classic Lemon Scent</h3>
+        <p>Bright, refreshing lemon formula that leaves dishes sparkling clean.</p>
+        <button onclick="toggleDetails('product1')">View Details</button>
+        <div class="product-details" id="product1">
+          <p><strong>Size:</strong> 300ml</p>
+          <p><strong>Features:</strong> Tough on grease, gentle on hands, fresh citrus scent</p>
+          <p><strong>Best for:</strong> Daily use and deep grease removal</p>
+          <p><strong>Price:</strong> ₱130</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="aloe vera care.png" alt="Aloe Vera Care" />
+        <h3>Aloe Vera Care</h3>
+        <p>Moisturizing power with natural aloe vera to protect your hands.</p>
+        <button onclick="toggleDetails('product2')">View Details</button>
+        <div class="product-details" id="product2">
+          <p><strong>Size:</strong> 300ml</p>
+          <p><strong>Features:</strong> Skin-soothing ingredients, mild on hands, non-toxic</p>
+          <p><strong>Best for:</strong> Sensitive skin and frequent washers</p>
+          <p><strong>Price:</strong> ₱130</p>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <img src="eco-power concentrate.png" alt="Eco-Power Concentrate" />
+        <h3>Eco-Power Concentrate</h3>
+        <p>Highly concentrated and biodegradable solution for eco-conscious users.</p>
+        <button onclick="toggleDetails('product3')">View Details</button>
+        <div class="product-details" id="product3">
+          <p><strong>Size:</strong> 300ml</p>
+          <p><strong>Features:</strong> Eco-friendly, long-lasting formula, no phosphates</p>
+          <p><strong>Best for:</strong> Green households and minimalists</p>
+          <p><strong>Price:</strong> ₱150</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer-fullwidth">
+    <div class="footer-inner">
+      <h2>FML’s Ready-Mix Dishwashing Soap</h2>
+      <p>Providing safe, powerful, and eco-friendly dishwashing solutions for every home.</p>
+      <div class="footer-contact-info">
+        <p><strong>Email:</strong> <a href="https://loria.francisbscs2024@gmail.com" target="_blank">loria.francisbscs2024@gmail.com</a></p>
+        <p><strong>Phone:</strong> +63 962 521 1520</p>
+        <p><strong>Facebook:</strong> <a href="https://www.facebook.com/sicnarf.airol" target="_blank">Francis M. Loria</a></p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 FML. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links ul");
+  
+      toggle.addEventListener("click", function () {
+        navLinks.classList.toggle("show");
+      });
+    });
+  </script>
+  
+</body>
+</html>
