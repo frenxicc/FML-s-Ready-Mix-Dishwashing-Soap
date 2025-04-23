@@ -269,7 +269,7 @@ body {
 }
 
 .product-details {
-  display: none;
+  display: inline;
   margin-top: 1rem;
   font-size: 0.95rem;
   color: #333;
